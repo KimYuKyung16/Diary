@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <Button
+                android:id="@+id/btn_calendar"
+                android:layout_width="42dp"
+                android:layout_height="50dp"
+                android:background="@drawable/calendar"
+                android:textColor="#FFFFFF" />
+
+            <TextView
+                android:id="@+id/tvDate"
+                android:layout_width="150dp"
+                android:layout_height="match_parent"
+                android:text="날짜를 설정해주세요"
+                android:gravity="center_vertical"
+                android:textStyle="bold"
+                android:textColor="#FFFFFF" />
+
+
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="right">
+            <Button
+                android:id="@+id/weather"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/sunny"/>
+
+            <Button
+                android:id="@+id/mood"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/moon1"/>
+
+            <Button
+                android:id="@+id/btn_save"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/check"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/calendar_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#FFFFFF"
+        android:gravity="center"
+        android:visibility="gone">
+        <CalendarView
+            android:id="@+id/calendarView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:showWeekNumber="false"/>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        android:layout_weight="13">
+
+        <EditText
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:background="@null"
+            android:gravity="center"
+            android:hint="제목"
+            android:singleLine="true"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#878787" />
+
+        <EditText
+            android:id="@+id/content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal"
+            android:hint="내용"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#878787"
+            android:background="@null"
+            android:layout_marginRight="15dp"
+            android:layout_marginLeft="15dp"/>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="horizontal"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/img"
+                android:layout_width="70dp"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="right">
+
+
+            <Button
+                android:id="@+id/btnAddFile"
+                android:layout_width="47dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:background="@drawable/add" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

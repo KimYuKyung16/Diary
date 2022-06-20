@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="#000000">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="LOGIN"
+        android:textColor="#FFFFFF"
+        android:textSize="20dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="사람들과 채팅을 하려면 로그인이 필요합니다"
+        android:textColor="#FDD646"
+        android:textSize="15dp"
+        android:layout_margin="10dp"/>
+
+
+    <EditText
+        android:id="@+id/login_id"
+        android:layout_width="312dp"
+        android:layout_height="wrap_content"
+        android:hint="Email"
+        android:textColorHint="#BABABA"
+        android:backgroundTint="#FFFFFF"
+        android:textColor="#FFFFFF"/>
+
+    <EditText
+        android:id="@+id/login_pw"
+        android:layout_width="312dp"
+        android:layout_height="wrap_content"
+        android:hint="password"
+        android:textColorHint="#BABABA"
+        android:backgroundTint="#FFFFFF"
+        android:textColor="#FFFFFF"/>
+
+    <Button
+        android:id="@+id/btn_login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Login"
+        android:layout_marginBottom="30dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="가입이 안되어있다면?"
+            android:textColor="#FFFFFF" />
+
+        <TextView
+            android:id="@+id/register_t2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="가입하기"
+            android:textColor="#FBDC80"/>
+    </LinearLayout>
+
+
+
+</LinearLayout>

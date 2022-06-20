@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:layout_marginLeft="5dp"
+    android:layout_marginRight="5dp"
+    android:background="#000000">
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1">
+
+        <ImageView
+            android:id="@+id/iv_profile"
+            android:layout_width="70dp"
+            android:layout_height="match_parent"
+            android:src="@drawable/moon_cat" />
+
+        <LinearLayout
+            android:gravity="left"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/tv_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="아이디"
+                android:textColor="#FFC107"
+                android:textSize="15dp"/>
+            <TextView
+                android:id="@+id/tv_content"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="내용"
+                android:textColor="#FFC107"
+                android:textSize="15dp"/>
+
+            <TextView
+                android:id="@+id/tv_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="시간"
+                android:textColor="#FFC107"
+                android:textSize="12dp"/>
+            </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:gravity="right"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/my_msg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="내 메시지"
+        android:textColor="#FFFFFF"
+        android:textSize="15dp"/>
+
+    <TextView
+        android:layout_gravity="right"
+        android:id="@+id/my_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="내 시간"
+        android:textColor="#FFFFFF"
+        android:textSize="12dp"/>
+
+    </LinearLayout>
+
+</LinearLayout>

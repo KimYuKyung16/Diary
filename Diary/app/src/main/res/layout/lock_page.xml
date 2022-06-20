@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#FFFFFF">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="잠금"
+        android:textSize="15dp"
+        android:padding="5dp"
+        android:textStyle="bold"
+        android:layout_marginBottom="10dp"/>
+
+    <Switch
+        android:id="@+id/lock_setting"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="잠금 화면"
+        android:textSize="18dp"
+        android:padding="5dp"/>
+
+    <Button
+        android:id="@+id/btn_password_change"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="암호 변경 (기본 암호: 1234)"
+        android:textSize="18dp"
+        android:background="#FFFFFF"
+        android:gravity="left|center_vertical"
+        android:padding="5dp"/>
+
+    <LinearLayout
+        android:id="@+id/pw_change_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="5dp"
+        android:visibility="invisible"
+        android:background="#F3F3F3">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="기존 패스워드: "/>
+            <EditText
+                android:id="@+id/current_pw"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="숫자만 입력하세요"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="변경할 패스워드: " />
+            <EditText
+                android:id="@+id/changepw"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="숫자만 입력하세요"/>
+        </LinearLayout>
+        <Button
+            android:id="@+id/btn_pw_save"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="완료"
+            android:layout_gravity="right"
+            android:layout_marginTop="20dp"/>
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

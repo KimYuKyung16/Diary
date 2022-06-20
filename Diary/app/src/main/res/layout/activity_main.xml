@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/background_first"
+    tools:context=".MainActivity">
+
+
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="100dp"
+       android:orientation="vertical"
+       android:gravity="center_vertical"
+       android:layout_marginLeft="15dp">
+
+       <LinearLayout
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/diary_num_all"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="일기 개수 전체:  "
+                android:textColor="#FFFFFF"
+                android:visibility="invisible"/>
+           <TextView
+               android:id="@+id/diary_num_all_count"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="1"
+               android:textColor="#FFFFFF"
+               android:visibility="invisible"/>
+       </LinearLayout>
+
+       <LinearLayout
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content">
+           <TextView
+               android:id="@+id/diary_need"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="다음 단계까지 필요한 일기 수:  "
+               android:textColor="#FFFFFF"
+               android:visibility="invisible"/>
+           <TextView
+               android:id="@+id/diary_need_count"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="1"
+               android:textColor="#FFFFFF"
+               android:visibility="invisible"/>
+
+       </LinearLayout>
+
+   </LinearLayout>
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="bottom">
+
+        <Button
+            android:id="@+id/main_menu"
+            android:layout_width="39dp"
+            android:layout_height="37dp"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/menu"
+            android:layout_marginBottom="10dp"/>
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/main_frame"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="?attr/actionBarSize">
+
+    </FrameLayout>
+
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomNavigationView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_marginStart="0dp"
+        android:layout_marginEnd="0dp"
+        android:background="@color/cardview_dark_background"
+        app:itemBackground="@color/cardview_dark_background"
+        app:itemIconTint="@drawable/menu_selector_color"
+        app:itemTextColor="@drawable/menu_selector_color"
+        app:labelVisibilityMode="labeled"
+        app:menu="@menu/menu_bottom"
+        android:visibility="gone"/>
+
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

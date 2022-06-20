@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/moon1"
+        android:icon="@drawable/moon1"
+        android:title="moon1" />
+    <item
+        android:id="@+id/moon2"
+        android:icon="@drawable/moon2"
+        android:title="moon2" />
+    <item
+        android:id="@+id/moon3"
+        android:icon="@drawable/moon3"
+        android:title="moon3" />
+    <item
+
+        android:id="@+id/moon4"
+        android:icon="@drawable/moon4"
+        android:title="moon4" />
+    <item
+        android:id="@+id/moon5"
+        android:icon="@drawable/moon5"
+        android:title="moon5" />
+</menu>

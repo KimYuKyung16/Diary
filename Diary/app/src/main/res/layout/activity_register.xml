@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#000000">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_margin="20dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Register"
+        android:textSize="24dp"
+        android:textColor="#FFFFFF"
+        android:gravity="center"
+        android:layout_marginBottom="20dp"
+        android:textStyle="bold"/>
+
+    <EditText
+        android:id="@+id/nameEt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Name"
+        android:textColorHint="#BABABA"
+        android:textColor="#FFFFFF"
+        android:backgroundTint="#FFFFFF"/>
+
+    <EditText
+        android:id="@+id/emailEt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Email"
+        android:textColorHint="#BABABA"
+        android:textColor="#FFFFFF"
+        android:backgroundTint="#FFFFFF"/>
+
+    <EditText
+        android:id="@+id/passwordEdt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="password"
+        android:textColorHint="#BABABA"
+        android:textColor="#FFFFFF"
+        android:backgroundTint="#FFFFFF"/>
+
+    <EditText
+        android:id="@+id/passwordcheckEdt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="passwordcheck"
+        android:textColorHint="#BABABA"
+        android:textColor="#FFFFFF"
+        android:backgroundTint="#FFFFFF"/>
+
+    <Button
+        android:id="@+id/register2_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="REGISTER"
+        android:layout_marginTop="40dp"/>
+    </LinearLayout>
+
+</LinearLayout>

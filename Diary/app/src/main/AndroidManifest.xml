@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.diary">
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="false"
+        android:fullBackupContent="false"
+        android:icon="@mipmap/ic_launcher_new_foreground"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_new_foreground"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Diary"
+        tools:replace="android:icon">
+
+
+        <receiver android:name=".MyAppWidget">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/my_app_widget_info" />
+        </receiver>
+
+
+        <activity android:name=".LoadingActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".PassWordActivity"
+            android:label="잠금설정 액티비티" />
+        <activity
+            android:name=".MainActivity"
+            android:label="메인화면 액티비티" />
+        <activity
+            android:name=".RegisterActivity"
+            android:label="회원가입 액티비티" />
+        <activity
+            android:name=".WriteActivity"
+            android:label="쓰기 액티비티" />
+        <activity
+            android:name=".ListActivity"
+            android:label="목록 액티비티" />
+        <activity
+            android:name=".MainSettingActivity"
+            android:label="설정 액티비티" />
+        <activity
+            android:name=".DiaryListClickActivity"
+            android:label="다이어리 목록을 클릭했을 때의 액티비티" />
+        <activity
+            android:name=".DiarycountActivity"
+            android:label="다이어리 개수를 알려주는 액티비티" />
+        <activity
+            android:name=".SettingActivity"
+            android:label="배경설정 액티비티" />
+        <activity
+            android:name=".LockActivity"
+            android:label="잠금 액티비티" />
+        <activity
+            android:name=".NoticeActivity"
+            android:label="일기 쓰기 알림 액티비티" />
+        <activity
+            android:name=".BigPictureActivity"
+            android:label="큰 그림 액티비티" />
+        <activity
+            android:name=".ModifyActivity"
+            android:label="수정 액티비티" />
+        <activity
+            android:name=".ChatActivity"
+            android:label="채팅 액티비티" />
+        <activity
+            android:name=".ExLoginActivity"
+            android:label="채팅 로그인 액티비티" />
+
+
+
+        <receiver
+            android:name=".DeviceBootReceiver"
+            android:enabled="false">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+        </receiver>
+        <receiver android:name=".AlarmReceiver" />
+
+
+    </application>
+
+</manifest>
